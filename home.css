@@ -117,6 +117,7 @@ body {
 @media only screen and (max-width: 940px) {
   .side {
     padding: 20px 0 20px 70px;
+     width: 50%;
   }
 
   .side1 {
@@ -154,15 +155,13 @@ body {
 }
 
 .crimg2 {
-  width: 100%;
-  height: 100%;
   border-radius: 25px;
 }
 
 @media only screen and (max-width: 940px) {
   .crimg2 {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
   }
 }
