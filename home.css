@@ -116,6 +116,9 @@ body {
 a img:hover{
   transform: scale(0.99);
 }
+a img:hover{
+  transform: scale(0.99);
+}
 
 @media only screen and (max-width: 940px) {
   .side {
