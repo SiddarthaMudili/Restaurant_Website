@@ -307,3 +307,11 @@ a img:hover{
   height: 350px;
   border-radius: 20px;
 }
+.font{
+  font-size:30px;
+}
+@media only screen and (max-width: 600px){
+  .font{
+    font-size:25px;
+  }
+}
