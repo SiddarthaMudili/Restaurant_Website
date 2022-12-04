@@ -9,17 +9,18 @@ body {
   background-color: #F2F2F2;
 }
 
-.bar {
+.navbar{
   background-color: #F22B0C;
-  height: 80px;
-  width: 100%;
+  color:white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 
 .bar ul {
+  margin:0;
+  padding:0;
   list-style: none;
   display: flex;
 }
@@ -33,10 +34,56 @@ body {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  display:block;
 }
 
 .bar ul li a:hover {
   color: salmon;
+}
+
+.toggle{
+  position:absolute;
+  top: 35px;
+  right: 50px;
+  display:none;
+  flex-direction:column;
+  justify-content: space-between;
+  width: 30px;
+  height:20px;
+}
+
+@media (max-width: 600px){
+  .toggle ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+  }
+  .toggle ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:22px;
+    display:block;
+  }
+  .toggle{
+    display:flex;
+  }
+  .bar{
+    display:none;
+  }
+  .toggle ul li:hover .drop {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    font-size: 18px;
+    width: 270px;
+    background-color: #F22B0C;
+  }
+  .toggle ul li:hover .drop ul {
+    display: block;
+    margin: 10px;
+  }
 }
 
 .drop {
@@ -66,19 +113,6 @@ body {
   float: right;
   margin-left: 10px;
   padding-top: 3px;
-}
-
-.drop-1 {
-  display: none;
-}
-
-.drop ul li:hover .drop-1 {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 260px;
-  background-color: #F22B0C;
 }
 
 .mra {
