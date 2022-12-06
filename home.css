@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -210,7 +211,13 @@ a img:hover{
 .rate {
   float: left;
   height: 46px;
-  padding: 0 10px;
+  padding-left:410px
+}
+
+@media only screen and (max-width: 700px){
+  .rate{
+    padding-left:120px
+  }
 }
 
 .rate:not(:checked)>input {
@@ -262,19 +269,39 @@ a img:hover{
 }
 .reserve {
   width: 100%;
-  height: 600px;
 }
 
 .reserve1 {
-  width: 533px;
-  height: 600px;
+  width: 1000px;
+  height: 500px;
   background-color: white;
 }
 
+.reserve2{
+  padding: 20px 20px 20px 250px;
+  float:left;color:#F22B0C;
+}
+
+.session{
+  padding: 0px 250px;
+}
+
 @media only screen and (max-width: 700px) {
+  .reserve{
+    width:100%;
+  }
   .reserve1 {
     width: 100%;
+    padding:2%;
   }
+
+.session{
+  padding-left: 40px;
+}
+
+.reserve2{
+  padding: 2%
+}
 }
 
 .menu {
